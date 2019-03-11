@@ -12,6 +12,8 @@
 		9D4EF01D2235C9ED00310B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4EF01B2235C9ED00310B1E /* Main.storyboard */; };
 		9D4EF01F2235C9F000310B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4EF01E2235C9F000310B1E /* Assets.xcassets */; };
 		9D4EF0222235C9F000310B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4EF0202235C9F000310B1E /* LaunchScreen.storyboard */; };
+		9D4EF02A2235F42800310B1E /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EF0292235F42800310B1E /* MyImageView.swift */; };
+		9D4EF02C2235FD4700310B1E /* MultipeerConnectivityHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4EF02B2235FD4700310B1E /* MultipeerConnectivityHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9D4EF01E2235C9F000310B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D4EF0212235C9F000310B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D4EF0232235C9F000310B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4EF0292235F42800310B1E /* MyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
+		9D4EF02B2235FD4700310B1E /* MultipeerConnectivityHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerConnectivityHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				9D4EF0172235C9ED00310B1E /* AppDelegate.swift */,
 				9D4EF0192235C9ED00310B1E /* ViewController.swift */,
+				9D4EF0292235F42800310B1E /* MyImageView.swift */,
+				9D4EF02B2235FD4700310B1E /* MultipeerConnectivityHandling.swift */,
 				9D4EF01B2235C9ED00310B1E /* Main.storyboard */,
 				9D4EF01E2235C9F000310B1E /* Assets.xcassets */,
 				9D4EF0202235C9F000310B1E /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D4EF01A2235C9ED00310B1E /* ViewController.swift in Sources */,
+				9D4EF02C2235FD4700310B1E /* MultipeerConnectivityHandling.swift in Sources */,
 				9D4EF0182235C9ED00310B1E /* AppDelegate.swift in Sources */,
+				9D4EF02A2235F42800310B1E /* MyImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
