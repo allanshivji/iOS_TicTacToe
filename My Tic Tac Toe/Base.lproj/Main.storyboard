@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YLW-tY-pte">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,68 +15,75 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="kj1-6z-ovq">
-                                <rect key="frame" x="20" y="261" width="374" height="374"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="374" id="aiR-vh-mC6"/>
-                                    <constraint firstAttribute="width" constant="374" id="zWm-Op-JjS"/>
-                                </constraints>
+                                <rect key="frame" x="7.5" y="153.5" width="360" height="360"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-Jo-EVd" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="35" y="280" width="90" height="90"/>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="twd-dx-ebP" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="162" y="184" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="twd-dx-ebP" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="162" y="280" width="90" height="90"/>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-ED-G35" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="278" y="184" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-ED-G35" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="287" y="280" width="90" height="90"/>
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-uh-iof" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="18M-G3-vud" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="287" y="403" width="90" height="90"/>
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="NEJ-Af-O7O" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="38" y="308" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-uh-iof" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="162" y="403" width="90" height="90"/>
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-G3-ozO" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="38" y="427" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="NEJ-Af-O7O" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="35" y="403" width="90" height="90"/>
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="krS-lK-kks" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="162" y="427" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-G3-ozO" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="35" y="529" width="90" height="90"/>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-Jo-EVd" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="38" y="184" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="krS-lK-kks" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="162" y="529" width="90" height="90"/>
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="18M-G3-vud" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="278" y="308" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="TSu-hd-PTq" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
-                                <rect key="frame" x="287" y="529" width="90" height="90"/>
+                            <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="TSu-hd-PTq" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                                <rect key="frame" x="278" y="427" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kj1-6z-ovq" secondAttribute="bottom" constant="227" id="0Gh-av-I6X"/>
-                            <constraint firstItem="kj1-6z-ovq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Dj-Tb-5Qk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kj1-6z-ovq" secondAttribute="trailing" constant="20" id="fSQ-xD-YSO"/>
-                            <constraint firstItem="kj1-6z-ovq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="nk9-o0-dpW"/>
-                            <constraint firstItem="kj1-6z-ovq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rpB-Xq-b85"/>
-                            <constraint firstItem="kj1-6z-ovq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vGy-Ah-8SM"/>
+                            <constraint firstItem="kj1-6z-ovq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ifx-JO-WPu"/>
+                            <constraint firstItem="kj1-6z-ovq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJq-rR-Wzw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="b88-rL-ZZw">
-                        <barButtonItem key="leftBarButtonItem" title="Get Connected" id="mp4-Dc-D42"/>
+                        <barButtonItem key="leftBarButtonItem" title="Get Connected" id="mp4-Dc-D42">
+                            <connections>
+                                <action selector="getConnected:" destination="BYZ-38-t0r" id="URj-FI-04D"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Xc4-Mu-rB3"/>
                     </navigationItem>
+                    <connections>
+                        <outletCollection property="xField" destination="wd4-Jo-EVd" collectionClass="NSMutableArray" id="lSC-J1-pvC"/>
+                        <outletCollection property="xField" destination="twd-dx-ebP" collectionClass="NSMutableArray" id="1RM-yW-BWN"/>
+                        <outletCollection property="xField" destination="Ehl-ED-G35" collectionClass="NSMutableArray" id="go2-Sr-tf2"/>
+                        <outletCollection property="xField" destination="NEJ-Af-O7O" collectionClass="NSMutableArray" id="X74-49-mtC"/>
+                        <outletCollection property="xField" destination="Mhy-uh-iof" collectionClass="NSMutableArray" id="fyC-Q7-mjy"/>
+                        <outletCollection property="xField" destination="18M-G3-vud" collectionClass="NSMutableArray" id="nFX-7J-3vy"/>
+                        <outletCollection property="xField" destination="lUd-G3-ozO" collectionClass="NSMutableArray" id="cFt-TZ-YDh"/>
+                        <outletCollection property="xField" destination="krS-lK-kks" collectionClass="NSMutableArray" id="Pd7-LE-ZU4"/>
+                        <outletCollection property="xField" destination="TSu-hd-PTq" collectionClass="NSMutableArray" id="kS9-ov-GJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +95,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YLW-tY-pte" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T4c-Mi-qPC">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
