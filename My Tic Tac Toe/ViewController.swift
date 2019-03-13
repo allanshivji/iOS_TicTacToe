@@ -24,6 +24,26 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
         appDelegate.mpcHandling.gettingPeerConnection(displayName: UIDevice.current.name)
         appDelegate.mpcHandling.gettingSession()
         appDelegate.mpcHandling.showingSelf(show: true)
+        
+        //handling peer state notification
+        
+        NotificationCenter.default.addObserver(self, selector: "peerChangedNotification:", name: NSNotification.Name(rawValue: "MPC_DidChangeStateNotification"), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: Selector("handleReceivedNotification:"), name: NSNotification.Name(rawValue: "MPC_DidReceiveNotification"), object: nil)
+        
+        mainLogicField()
+        
+    }
+    
+    func peerChangedNotification(notification:NSNotification){
+        let userInfo = NSDictionary(dictionary: notification.userInfo!)
+        
+        let state = userInfo.object(forKey: "state") as! Int
+        
+        if state != MCSessionState.connecting.rawValue{
+            //Now we inform user that we have connected
+            self.navigationItem.title = "Connected Successfully"
+        }
     }
     
     
@@ -43,7 +63,7 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
     
     
     
-    func mainLogic() {
+    func mainLogicField() {
         for index in 0 ... xField.count - 1 {
             
             let recognizeGestureTouch = UITapGestureRecognizer(target: self, action: "fieldTapped")

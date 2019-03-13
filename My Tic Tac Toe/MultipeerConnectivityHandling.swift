@@ -43,19 +43,19 @@ class MultipeerConnectivityHandling: NSObject, MCSessionDelegate {
     }
     
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-        let gettingInfo = ["peersId":pId,"state":state.rawValue] as [String : Any]
+        let userInfo = ["peersId":pId,"state":state.rawValue] as [String : Any]
 //        dispatch_async(dispatch_get_main_queue(), {()->Void in
 //
 //            })
         DispatchQueue.main.async {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MPC_DidChangeStateNotification"), object: nil, userInfo: gettingInfo)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MPC_DidChangeStateNotification"), object: nil, userInfo: userInfo)
         }
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        let gettingInfo = ["data":data, "peerId":peerID] as [String : Any]
+        let userInfo = ["data":data, "peerId":peerID] as [String : Any]
         DispatchQueue.main.async {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MPC_DidReceiveNotification"), object: nil, userInfo: gettingInfo)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MPC_DidReceiveNotification"), object: nil, userInfo: userInfo)
         }
     }
     
