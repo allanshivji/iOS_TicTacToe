@@ -21,39 +21,39 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="kj1-6z-ovq">
                                 <rect key="frame" x="7.5" y="153.5" width="360" height="360"/>
                             </imageView>
-                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="twd-dx-ebP" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="twd-dx-ebP" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="162" y="184" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-ED-G35" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-ED-G35" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="278" y="184" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-uh-iof" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-uh-iof" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="162" y="308" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="NEJ-Af-O7O" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEJ-Af-O7O" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="38" y="308" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-G3-ozO" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUd-G3-ozO" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="38" y="427" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="krS-lK-kks" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krS-lK-kks" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="162" y="427" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-Jo-EVd" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wd4-Jo-EVd" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="38" y="184" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="18M-G3-vud" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18M-G3-vud" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="278" y="308" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="TSu-hd-PTq" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
+                            <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSu-hd-PTq" customClass="MyImageView" customModule="My_Tic_Tac_Toe" customModuleProvider="target">
                                 <rect key="frame" x="278" y="427" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -110,6 +110,5 @@
     </scenes>
     <resources>
         <image name="board" width="360" height="360"/>
-        <image name="x" width="1000" height="1000"/>
     </resources>
 </document>

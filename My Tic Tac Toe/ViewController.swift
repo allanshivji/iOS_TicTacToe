@@ -11,9 +11,9 @@ import MultipeerConnectivity
 
 class ViewController: UIViewController, MCBrowserViewControllerDelegate {
     
-    
-
     @IBOutlet var xField: [MyImageView]!
+    
+    var currentTap:String!
     
     var appDelegate:AppDelegate!
     
@@ -27,24 +27,29 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
         
         //handling peer state notification
         
-        NotificationCenter.default.addObserver(self, selector: "peerChangedNotification:", name: NSNotification.Name(rawValue: "MPC_DidChangeStateNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(peerChangedNotification(notification:)), name: NSNotification.Name(rawValue: "MPC_DidChangeStateNotification"), object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: Selector("handleReceivedNotification:"), name: NSNotification.Name(rawValue: "MPC_DidReceiveNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedNotification(notification:)), name: NSNotification.Name(rawValue: "MPC_DidReceiveNotification"), object: nil)
         
         mainLogicField()
-        
+        currentTap = "x"
     }
     
-    func peerChangedNotification(notification:NSNotification){
+    @objc func peerChangedNotification(notification:NSNotification){
         let userInfo = NSDictionary(dictionary: notification.userInfo!)
         
         let state = userInfo.object(forKey: "state") as! Int
         
         if state != MCSessionState.connecting.rawValue{
             //Now we inform user that we have connected
-            self.navigationItem.title = "Connected Successfully"
+            self.navigationItem.title = "Connected"
         }
     }
+    
+    @objc func handleReceivedNotification(notification:NSNotification){
+        
+    }
+    
     
     
     @IBAction func getConnected(_ sender: Any) {
@@ -60,13 +65,32 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
         
     }
     
-    
+    @objc func imageTapped(recognizer:UITapGestureRecognizer){
+        
+        let tappedImage = recognizer.view as! MyImageView
+        tappedImage.settingPlayer(_player: currentTap)
+        
+        //To know o nother device if tapped is done or not
+        
+        //create dictionary
+        let sendMessageOtherDevice = ["field":tappedImage.tag, "player":currentTap] as [String : Any]
+        
+        //preper NSData to send as directly dictionary cannot be sent
+        do{
+            let messageData = try JSONSerialization.data(withJSONObject: sendMessageOtherDevice, options: JSONSerialization.WritingOptions.prettyPrinted)
+        } catch {
+            print(Error.self)
+        }
+        
+        
+        
+    }
     
     
     func mainLogicField() {
         for index in 0 ... xField.count - 1 {
             
-            let recognizeGestureTouch = UITapGestureRecognizer(target: self, action: "fieldTapped")
+            let recognizeGestureTouch = UITapGestureRecognizer(target: self, action: #selector(imageTapped(recognizer:)))
             
             recognizeGestureTouch.numberOfTapsRequired = 1
             
