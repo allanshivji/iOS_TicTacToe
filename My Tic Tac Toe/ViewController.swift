@@ -48,6 +48,30 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
     
     @objc func handleReceivedNotification(notification:NSNotification){
         
+        
+        do {
+            
+            let userInfo = notification.userInfo! as Dictionary
+            let receivedData:NSData = userInfo["data"] as! NSData
+            
+            let message =  try JSONSerialization.jsonObject(with: (receivedData as NSData) as Data, options: JSONSerialization.ReadingOptions.allowFragments)
+            
+            let senderPeerId:MCPeerID = userInfo["peerID"] as! MCPeerID
+            
+            let senderDisplayName = senderPeerId.displayName
+            print("Hello Wprld")
+            print(message)
+            
+            
+            
+            
+        } catch {
+            print(Error.self)
+        }
+        
+//        let message = JSONSerialization.jsonObject(with: receivedData, options: JSONSerialization.ReadingOptions.allowFragments)
+        
+        
     }
     
     
@@ -65,6 +89,8 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
         
     }
     
+    
+    //SOMETHING IS WRONG HERE
     @objc func imageTapped(recognizer:UITapGestureRecognizer){
         
         let tappedImage = recognizer.view as! MyImageView
@@ -72,15 +98,30 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
         
         //To know o nother device if tapped is done or not
         
-        //create dictionary
-        let sendMessageOtherDevice = ["field":tappedImage.tag, "player":currentTap] as [String : Any]
         
-        //preper NSData to send as directly dictionary cannot be sent
         do{
+            
+            //create dictionary
+            let sendMessageOtherDevice = ["field":tappedImage.tag, "player":currentTap] as [String : Any]
+            
+            //preper NSData to send as directly dictionary cannot be sent
+            
             let messageData = try JSONSerialization.data(withJSONObject: sendMessageOtherDevice, options: JSONSerialization.WritingOptions.prettyPrinted)
+            
+//            var error:NSError?
+            
+            try appDelegate.mpcHandling.gameSession.send(messageData, toPeers: appDelegate.mpcHandling.gameSession.connectedPeers, with: MCSessionSendDataMode.reliable)
+            
+            
+            
+            
+            
         } catch {
             print(Error.self)
         }
+        
+
+        
         
         
         
